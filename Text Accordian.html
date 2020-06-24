@@ -1,0 +1,133 @@
+<!doctype html>
+<title>Text Accordian Animation</title>
+<style>
+  * {
+    margin:0;
+    padding:0;
+  }
+  html,body {
+    height:100%;
+  }
+  body {
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    display:-moz-box;
+    -moz-box-orient:vertical;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    display:-ms-box;
+    -ms-box-orient:vertical;
+    -ms-box-pack:middle;
+    -ms-box-align:middle;
+    display:box;
+    box-orient:vertical;
+    box-pack:center;
+    box-align:center;
+    font:.7em/1.5 "lucida grande", arial, sans-serif;
+    background:#f3faff;
+    /* For Firefox */ width:100%;
+  }
+  div {
+    width:250px;
+    background:#fff;
+    border-radius:5px;
+    -webkit-box-shadow:0 1px 3px rgba(0,0,0,.3);
+    box-shadow:0 1px 3px rgba(0,0,0,.3);
+  }
+  p {
+    height:0;
+    padding:0 15px;
+    overflow:hidden;
+    -webkit-transition:height .4s ease-out, padding .4s ease-out;
+    -moz-transition:height .4s ease-out, padding .4s ease-out;
+    -o-transition:height .4s ease-out, padding .4s ease-out;
+    -ms-transition:height .4s ease-out, padding .4s ease-out;
+    transition:height .4s ease-out, padding .4s ease-out;
+  }
+  h1 {
+    font-size:1em;
+  }
+  a {
+    display:block;
+    height:23px;
+    line-height:23px;
+    background:-webkit-gradient(
+      linear, 0 0, 0 100%,
+      from(#eee), to(#ccc)
+    );
+    background:-moz-linear-gradient(#eee, #ccc);
+    background:-o-linear-gradient(#eee, #ccc);
+    background:-ms-linear-gradient(#eee, #ccc);
+    background:linear-gradient(#eee, #ccc);
+    color:#333;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:0 1px 0 rgba(128, 144, 187, 0.5);
+    border-bottom:1px solid #aaa;
+  }
+  #aboutme {
+    border-radius:2px 2px 0 0;
+  }
+  #keyprojects {
+    border-radius:0 0 3px 3px;
+  }
+  a:hover, a:focus {
+    opacity: 0.8;
+  }
+  a:active {
+    background:-webkit-gradient(
+      linear, 0 0, 0 100%,
+      from(#ccc), to(rgb(53, 37, 37))
+    );
+    background:-moz-linear-gradient(#ccc, #ddd);
+    background:-o-linear-gradient(#ccc, #ddd);
+    background:-ms-linear-gradient(#ccc, #ddd);
+    background:linear-gradient(#ccc, #ddd);
+    color:#000;
+  }
+  :target + p {
+    padding:10px 15px;
+    border-bottom:1px solid #ccc;
+  }
+  #aboutme:target + p {
+    height:280px;
+  }
+  #experience:target + p {
+    height:100px;
+  }
+  #keyprojects:target {
+    border-radius:0;
+  }
+  #keyprojects:target + p {
+    height:270px;
+  }
+</style>
+<div>
+  <section>
+    <a href="#aboutme" id="aboutme">
+      <h1>About Me</h1>
+    </a>
+    <p>
+      I am React developer from Argentina with 6 years of experience in web development. From the simple web site to Complicated multiple web app I have developed with my expertise.I have rich experience in landing page, responsive web page, SPA, fixing bug and issue, refactoring messy code, analyzing codebase and adding features to existing web applications. As a full time developer, I can be available for discussion about projects when you require.I will do my best to deliver you best quality code. My Proficient skills : HTML5, CSS3, BOOTSTRAP Javascript, jQuery, Ajax React, React Bootstrap, Material UI, Redux Node.js, Express API Integration Stripe Amazon Web Service
+    </p>
+  </section>
+  <section>
+    <a href="#experience" id="experience">
+      <h1>Work Experience</h1>
+    </a>
+    <p>
+      I have assisted to develop some Medium-scale projects with Front-End. Especially, I have built Landing page and integrated some APIs. They were React.Js Projects. Except for this, I had gotten involved in a few projects at the time.
+    </p>
+  </section>
+  <section>
+    <a href="#keyprojects" id="keyprojects">
+      <h1>Key Projects</h1>
+    </a>
+    <p>
+      I have developed some MERN Stack projects and other React projects. Regarding full stack, I highlight MERN Stack. And Frontend Development is very proficient to me. In case I was responsible for Frontend part, I have built frontend page and Integrated APIs such as Payment Gateway, Google Maps.
+      Especially, I prefer landing page development. Recently, I have built some of Airbnb site with React TypeScript, BootStrap, Material UI. And several months ago, I designed landing page with HTML5, CSS, BootStrap and it is fully responsive and mobile friendly as well. I think, such jobs require my creativity. So I enjoy my jobs. 
+    </p>
+  </section>
+</div>
